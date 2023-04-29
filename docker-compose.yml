@@ -1,0 +1,14 @@
+version : "3"
+services:
+  miyojiro:
+    container_name: miyojiro
+    stdin_open: true
+    build:
+      context: .
+      dockerfile: Dockerfile
+    tty: true
+    volumes:
+      - type: bind
+        source: .
+        target: /opt/MIYOJIRO
+    working_dir: /opt/MIYOJIRO
