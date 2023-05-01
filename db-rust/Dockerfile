@@ -4,9 +4,9 @@ RUN apt-get update
 
 RUN apt -y install rust-all
 
-RUN mkdir -p /opt/MIYOJIRO
+RUN mkdir -p /opt/rust-owndb
 
-WORKDIR /opt/MIYOJIRO
+WORKDIR /opt/rust-owndb
 
 COPY . .
 
