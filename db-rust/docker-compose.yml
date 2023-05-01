@@ -1,7 +1,7 @@
 version : "3"
 services:
-  miyojiro:
-    container_name: miyojiro
+  rust-owndb:
+    container_name: rust-owndb
     stdin_open: true
     build:
       context: .
@@ -10,5 +10,5 @@ services:
     volumes:
       - type: bind
         source: .
-        target: /opt/MIYOJIRO
-    working_dir: /opt/MIYOJIRO
+        target: /opt/rust-owndb
+    working_dir: /opt/rust-owndb
